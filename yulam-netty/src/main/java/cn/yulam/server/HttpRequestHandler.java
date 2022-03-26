@@ -20,6 +20,7 @@ import java.util.Map;
  * date: 2022/3/18
  */
 public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
+
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, FullHttpRequest req) throws Exception {
         //100 Continue
@@ -45,4 +46,6 @@ public class HttpRequestHandler extends SimpleChannelInboundHandler<FullHttpRequ
         // 将html write到客户端
         ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
     }
+
+
 }

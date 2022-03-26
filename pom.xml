@@ -7,6 +7,7 @@
     <modules>
         <module>yulam-boot</module>
         <module>yulam-netty</module>
+        <module>yulam-base</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
