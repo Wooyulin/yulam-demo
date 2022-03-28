@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.yulam.config.RpcAutoConfiguration,\
+cn.yulam.config.ProviderAutoConfiguration,\
+cn.yulam.config.ConsumerAutoConfiguration

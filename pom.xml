@@ -8,6 +8,12 @@
         <module>yulam-boot</module>
         <module>yulam-netty</module>
         <module>yulam-base</module>
+        <module>yulam-redisson</module>
+        <module>yulam-rpc</module>
+        <module>yulam-rpc/rpc-provider</module>
+        <module>yulam-rpc/rpc-core-starter</module>
+        <module>yulam-rpc/rpc-consumer</module>
+        <module>yulam-rpc/rpc-api</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
