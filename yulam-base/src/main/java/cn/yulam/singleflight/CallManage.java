@@ -7,6 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.Supplier;
 
 /**
+ * https://pkg.go.dev/golang.org/x/sync/singleflight
  * @author 5yl
  * date: 2022/4/9
  */
