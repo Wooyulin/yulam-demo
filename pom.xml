@@ -16,6 +16,7 @@
         <module>yulam-rpc/rpc-api</module>
         <module>yulam-cloud</module>
         <module>yulam-cloud/cloud-gateway</module>
+        <module>yulam-pattern</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
