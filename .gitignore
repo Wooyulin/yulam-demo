@@ -21,3 +21,5 @@ logs/
 .springBeans
 .factorypath
 
+java_pid*
+

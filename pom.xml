@@ -17,6 +17,7 @@
         <module>yulam-cloud</module>
         <module>yulam-cloud/cloud-gateway</module>
         <module>yulam-pattern</module>
+        <module>yulam-jvm</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
