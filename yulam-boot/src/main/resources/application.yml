@@ -1,2 +1,10 @@
 server:
   port: 9090
+
+spring:
+  redis:
+    host: 192.168.199.155
+    port: 6379
+    password: avamasterA@#
+    redisson:
+      file: classpath:redisson.yml
