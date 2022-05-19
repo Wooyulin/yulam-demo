@@ -1,4 +1,4 @@
-package cn.yulam.config.other;
+package cn.yulam.config.simpleother;
 
 /**
  * @author 5yl
