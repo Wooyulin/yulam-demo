@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 
 /**
  * @author ganchaoyang
@@ -72,6 +73,15 @@ public class RegistryServer {
         } catch (Exception e) {
             throw new ZkConnectException("register to zk exception," + e.getMessage(), e.getCause());
         }
+    }
+
+    public static void main(String[] args) {
+        BigDecimal PI = new BigDecimal(3.1415926);
+
+        BigDecimal b = new BigDecimal("2");
+        BigDecimal a = new BigDecimal("3");
+        System.out.println(b.multiply(a).multiply(a).multiply(BigDecimal.valueOf(2)));
+        System.out.println(String.format("%s %s", b.));
     }
 
 }

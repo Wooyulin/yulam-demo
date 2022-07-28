@@ -1,6 +1,5 @@
-package cn.yulam.config.other;
+package cn.yulam.config.simpleother;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**

@@ -1,5 +1,6 @@
 package cn.yulam.concurrent;
 
+import java.util.Random;
 import java.util.concurrent.CompletableFuture;
 
 public class CompletableFutureTest {
@@ -24,14 +25,23 @@ public class CompletableFutureTest {
             return " 龙井 ";
         });
 
-        CompletableFuture<String> f3 =
-                f1.thenCombine(f2, (__, tf) -> {
-                    System.out.println("T1: 拿到茶叶:" + tf);
-                    System.out.println("T1: 泡茶...");
-                    return " 上茶:" + tf;
-                });
-        System.out.println(f3.join());
+        /**
+         * thenCombine
+         */
+//        CompletableFuture<String> f3 =
+//                f1.thenCombine(f2, (__, tf) -> {
+//                    System.out.println("T1: 拿到茶叶:" + tf);
+//                    System.out.println("T1: 泡茶...");
+//                    return " 上茶:" + tf;
+//                });
+//        System.out.println(f3.join());
+
+        CompletableFuture<Void> f4 = f1.thenAcceptBoth(f2, (__, tf) -> {
+            System.out.printf("nihao" + tf);
+        });
+        f4.join();
     }
+
 
     public static void testThen() {
         /**
@@ -72,9 +82,28 @@ public class CompletableFutureTest {
         System.out.println("thenCompose: " + length.join());
     }
 
-    public static void main(String[] args) {
-        testThen();
+    public static void testOR() {
+        CompletableFuture<Double> f1 = CompletableFuture.supplyAsync(() -> {
+            double random = Math.random();
+            System.out.println("F1 RUN" + random);
+            sleep(1000);
+            return random;
+        });
+        CompletableFuture<Double> f2 = CompletableFuture.supplyAsync(() -> {
+            double random = Math.random();
+            System.out.println("F2 RUN" + random);
+            sleep(1000);
+            return random;
+        });
 
+        CompletableFuture<Double> f3 = f1.applyToEither(f2, i -> i);
+        System.out.println(f3.join());
+    }
+
+    public static void main(String[] args) {
+//        testThen();
+//        simple();
+        testOR();
     }
 
     public static void sleep(int i) {
