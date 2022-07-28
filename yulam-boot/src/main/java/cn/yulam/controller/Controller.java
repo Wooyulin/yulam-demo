@@ -1,5 +1,7 @@
 package cn.yulam.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.CacheManager;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +17,16 @@ import java.util.List;
  */
 @RestController
 public class Controller {
+
+    @Autowired
+    private CacheManager cacheManager;
+
+    @RequestMapping("/put")
+    public String put() {
+        cacheManager.getCache("retCache").put("eh", "eee");
+        String v = cacheManager.getCache("retCache").get("eh", String.class);
+        return v;
+    }
     static class OOMObject {
 
     }

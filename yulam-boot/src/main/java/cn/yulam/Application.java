@@ -2,12 +2,14 @@ package cn.yulam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * @author 5yl
  * date: 2022/4/14
  */
 @SpringBootApplication
+@EnableCaching
 public class Application {
 
     public static void main(String[] args) {

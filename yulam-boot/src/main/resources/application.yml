@@ -3,8 +3,12 @@ server:
 
 spring:
   redis:
-    host: 192.168.199.155
+    host: 127.0.0.1
     port: 6379
-    password: avamasterA@#
+    password:
     redisson:
       file: classpath:redisson.yml
+
+logging:
+  level:
+    root: debug
