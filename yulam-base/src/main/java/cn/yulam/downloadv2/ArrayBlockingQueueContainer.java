@@ -6,7 +6,7 @@ import java.util.concurrent.ArrayBlockingQueue;
  * @author 5yl
  * date: 2022/7/28
  */
-public class ArrayBlockingQueueContainer implements Container{
+public class ArrayBlockingQueueContainer implements Container {
 
     private ArrayBlockingQueue<Job> queue;
 

@@ -1,7 +1,5 @@
 package cn.yulam.downloadv2;
 
-import cn.com.ava.common.utils.NamedThreadFactory;
-
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -18,8 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ContainerPool<T extends Container> {
 
     private static final AtomicInteger ROBIN_INDEX = new AtomicInteger(0);
-    private static final ScheduledExecutorService TIMER_EXECUTOR = Executors.newScheduledThreadPool(2,
-            new NamedThreadFactory(""));
+    private static final ScheduledExecutorService TIMER_EXECUTOR = Executors.newScheduledThreadPool(2);
     public Map<String, T> containers = new ConcurrentHashMap<>();
 
     public List<String> identifiers = new CopyOnWriteArrayList<>();

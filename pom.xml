@@ -14,8 +14,6 @@
         <module>yulam-rpc/rpc-core-starter</module>
         <module>yulam-rpc/rpc-consumer</module>
         <module>yulam-rpc/rpc-api</module>
-        <module>yulam-cloud</module>
-        <module>yulam-cloud/cloud-gateway</module>
         <module>yulam-pattern</module>
         <module>yulam-jvm</module>
     </modules>
@@ -23,7 +21,6 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.5.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>cn.yulam</groupId>
