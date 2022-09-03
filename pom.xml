@@ -16,6 +16,7 @@
         <module>yulam-rpc/rpc-api</module>
         <module>yulam-pattern</module>
         <module>yulam-jvm</module>
+        <module>jmh-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
