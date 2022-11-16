@@ -19,6 +19,7 @@
         <module>jmh-sample</module>
         <module>spring-webflux</module>
         <module>cdc-debezium</module>
+        <module>cdd-flink</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
