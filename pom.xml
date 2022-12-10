@@ -19,6 +19,8 @@
         <module>jmh-sample</module>
         <module>spring-webflux</module>
         <module>cdc-debezium</module>
+        <module>yulam-flink</module>
+        <module>rabbitmq-sample</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

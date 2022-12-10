@@ -1,0 +1,8 @@
+hello java
+hello flink
+hello scala
+hello spark
+hello storm
+how are you
+fine thank you
+and you

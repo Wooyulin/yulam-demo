@@ -1,0 +1,5 @@
+spring:
+  rabbitmq:
+    host: localhost # 服务器地址
+    port: 5672 # tcp端口
+    durable: true

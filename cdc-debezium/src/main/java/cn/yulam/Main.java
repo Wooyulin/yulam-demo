@@ -21,14 +21,16 @@ public class Main {
         props.setProperty("offset.storage.file.filename", "/tmp/offsets.dat");
         props.setProperty("offset.flush.interval.ms", "60000");
         /* begin connector properties */
-        props.setProperty("database.hostname", "localhost");
+        props.setProperty("database.hostname", "192.168.35.205");
         props.setProperty("database.port", "3306");
         props.setProperty("database.user", "root");
-        props.setProperty("database.password", "123456");
+        props.setProperty("database.password", "avamasterA@#");
         props.setProperty("database.server.id", "85744");
         props.setProperty("database.server.name", "my-app-connector");
         props.setProperty("database.history", "io.debezium.relational.history.FileDatabaseHistory");
         props.setProperty("database.history.file.filename", "/path/to/storage/dbhistory.dat");
+        props.setProperty("database.whitelist", "binlog_test");    // 库名
+        props.setProperty("table.include.list", "binlog_test.tb_test"); // 库.表名
 //        props.setProperty()
 
 // Create the engine with this configuration ...
